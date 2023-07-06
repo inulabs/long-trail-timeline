@@ -6,6 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 code {
@@ -13,9 +16,15 @@ code {
     monospace;
 }
 
-.map {
-  width: calc(100vw - 18px);
-  height: calc(100vh - 18px);
+.map-container {
+  width: calc(100vw - 10rem);
+  height: calc(100vh - 10rem);
   border: 1px solid black;
+  margin: 0  auto;
+}
+
+.map-container > * {
+  height: 100%;
+  width: 100%;
 }
 
